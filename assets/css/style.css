@@ -1,10 +1,3 @@
-/* :root {
-  --outer-space: #33393f;
-  --bright-turquoise: #2aefcb;
-  --gin: #e0eae4;
-  --heliotrope: #e866ec;
-} */
-
 html {
   scroll-behavior: smooth;
 }
@@ -54,7 +47,7 @@ a:hover {
   color: gray;
 }
 
-img {
+#profile-pic {
   border-radius: 50%;
   margin: 20px 20px 0px 0px;
   width: 150px;
@@ -70,12 +63,73 @@ section {
 section h2 {
   font-size: 36px;
   margin-right: 25px;
+  margin-bottom: 15px;
   text-decoration: underline;
+}
+
+#previous-work {
+  flex: 1 0 30%;
+  justify-content: center;
+}
+
+#previous-work h2 {
+  margin-right: auto;
+}
+
+#previous-work div {
+  margin-left: 7%;
+}
+
+#previous-work img {
+  width: 30%;
+  vertical-align: middle;
+  animation: shrink 0.3s;
+}
+
+#previous-work img:hover {
+  width: 35%;
+  animation: enlarge 0.3s;
 }
 
 footer {
   margin-top: 100px;
   text-align: center;
+}
+
+@keyframes enlarge {
+  0% {
+    width: 30%;
+  }
+  100% {
+    width: 35%;
+  }
+}
+
+@keyframes enlarge-768px {
+  0% {
+    width: 40%;
+  }
+  100% {
+    width: 45%;
+  }
+}
+
+@keyframes shrink {
+  0% {
+    width: 35%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+@keyframes shrink-768px {
+  0% {
+    width: 45%;
+  }
+  100% {
+    width: 40%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -87,5 +141,19 @@ footer {
   
   #first-nav {
     margin-left: 0px;
+  }
+
+  #previous-work div {
+    margin-left: 12%;
+  }
+
+  #previous-work img {
+    width: 40%;
+    animation: shrink-768px 0.3s;
+  }
+
+  #previous-work img:hover {
+    width: 45%;
+    animation: enlarge-768px 0.3s;
   }
 }
