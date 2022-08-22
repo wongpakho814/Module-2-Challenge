@@ -5,6 +5,10 @@
   --heliotrope: #e866ec;
 } */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
     Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -46,6 +50,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: gray;
+}
+
 img {
   border-radius: 50%;
   margin: 20px 20px 0px 0px;
@@ -62,6 +70,7 @@ section {
 section h2 {
   font-size: 36px;
   margin-right: 25px;
+  text-decoration: underline;
 }
 
 footer {
