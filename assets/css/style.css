@@ -1,3 +1,4 @@
+/* Styles applied to the entire document and body */
 html {
   scroll-behavior: smooth;
 }
@@ -9,11 +10,39 @@ body {
   background-color: #d9dcd6;
 }
 
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: gray;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+section h2 {
+  font-size: 36px;
+  margin-right: 25px;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+/* Styles applied to the header and footer */
 header, footer {
   padding: 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: #2a607c;
   color: #ffffff;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
 }
 
 header h1 {
@@ -38,15 +67,7 @@ nav ul li {
   margin-left: 25px;
 }
 
-a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-a:hover {
-  color: gray;
-}
-
+/* Styles applied to the profile picture in the top right corner */
 #profile-pic {
   border-radius: 50%;
   margin: 20px 20px 0px 0px;
@@ -54,19 +75,7 @@ a:hover {
   float: right;
 }
 
-section {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 50px;
-}
-
-section h2 {
-  font-size: 36px;
-  margin-right: 25px;
-  margin-bottom: 15px;
-  text-decoration: underline;
-}
-
+/* Styles applied to both the Previous Work and Contact Me section */
 #previous-work, #contact-me {
   flex: 1 0 30%;
   justify-content: center;
@@ -76,6 +85,7 @@ section h2 {
   margin-right: auto;
 }
 
+/* Styles applied to the Previous Work section */
 #previous-work div {
   margin-left: 7%;
 }
@@ -91,6 +101,7 @@ section h2 {
   animation: enlarge 0.3s;
 }
 
+/* Styles applied to the Contact Me section */
 #contact-me h2 {
   width: 100%;
 }
@@ -103,11 +114,7 @@ section h2 {
   text-decoration: underline;
 }
 
-footer {
-  margin-top: 50px;
-  text-align: center;
-}
-
+/* Animations for the Previous Work section's images */
 @keyframes enlarge {
   0% {
     width: 30%;
@@ -144,6 +151,7 @@ footer {
   }
 }
 
+/* For tablet users */
 @media screen and (max-width: 992px) {
   #contact-me {
     flex-direction: column;
@@ -153,6 +161,7 @@ footer {
   }
 }
 
+/* For mobile phone users */
 @media screen and (max-width: 768px) {
   header {
     display: flex;
